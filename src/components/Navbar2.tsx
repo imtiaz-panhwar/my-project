@@ -10,7 +10,7 @@ function Navbar2() {
       <div className="max-w-screen-xl mx-auto h-[58px] bg-[#FFFFFF] flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Left Section: Logo or Brand */}
         <div className="flex-shrink-0">
-          <Image src="/vector1.png" width={58.85} height={22.54} alt="Logo" className="w-[40px] sm:w-[50px] lg:w-[58.85px]" />
+          <Image src="/Vector1.png" width={58.85} height={22.54} alt="Logo" className="w-[40px] sm:w-[50px] lg:w-[58.85px]" />
         </div>
 
         {/* Right Section: Contact Info and Icons */}
