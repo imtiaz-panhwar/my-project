@@ -21,7 +21,7 @@ function Home() {
           First Look
         </p>
         <h1 className="text-center w-[574] h-[60]  mt-[28] text-[58px] font-semibold">
-          {" "}
+          
           NIKE AIR MAX PULSE
         </h1>
         <p className="text-center w-[511] h-[48] text-[15px]">
@@ -46,10 +46,10 @@ function Home() {
         <div className="mr-[40px] flex items-center">
           <h1 className="mr-[10px]">Shop</h1>
           <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] mr-2 pl-[10px]">
-            <Image src="/frame2.png" width={30} height={30} alt="Logo" />
+            <Image src="/Frame2.png" width={30} height={30} alt=" roundbuttonLogo" />
           </button>
           <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] pl-[10px] mr-2">
-            <Image src="/frame.png" width={30} height={30} alt="Logo" />
+            <Image src="/Frame.png" width={30} height={30} alt="Logo" />
           </button>
         </div>
       </div>
@@ -58,7 +58,7 @@ function Home() {
         <div className="flex gap-3">
           <div className="w-[441.36px] h-[510.36px] bg-slate-300 flex-shrink-0 flex flex-col">
             <Image
-              src="/image1.png"
+              src="/Image1.png"
               width={441.36}
               height={441.36}
               alt="shoeimg"
@@ -74,7 +74,7 @@ function Home() {
 
           <div className="w-[441.36px] h-[510.36px] bg-slate-300 flex-shrink-0 flex flex-col">
             <Image
-              src="/image2.png"
+              src="/Image2.png"
               width={441.36}
               height={441.36}
               alt="shoeimg"
@@ -90,7 +90,7 @@ function Home() {
 
           <div className="w-[441.36px] h-[510.36px] bg-slate-300 flex-shrink-0 flex flex-col">
             <Image
-              src="/image3.png"
+              src="/Image3.png"
               width={441.36}
               height={441.36}
               alt="shoeimg"
@@ -108,7 +108,7 @@ function Home() {
 
           <div className="w-[441.36px] h-[510.36px] bg-slate-300 flex-shrink-0 flex flex-col">
             <Image
-              src="/image1.png"
+              src="/Image1.png"
               width={441.36}
               height={441.36}
               alt="shoeimg"
@@ -130,7 +130,7 @@ function Home() {
         <h1 className="text-[22px] mt-[13px] font-semibold font-sans leading-7">
           Feachered
         </h1>
-        <Image src="/imagefeacher.png" width={1344} height={700} alt="Logo" />
+        <Image src="/Imagefeacher.png" width={1344} height={700} alt="Logo" />
         <h1 className="text-center w-[574] h-[60]  mt-[28PX] text-[58px] font-semibold">
           
           STEP INTO WHAT FEELS GOOD
@@ -155,10 +155,10 @@ function Home() {
             <div className='class="w-[211px] h-[48px] top-[2px] left-[407px] p-[0px] pl-[7px] gap-0 opacity-0" flex justify-end items-center mr-5'>
               <h1 className="mr-[10px]">Shop Men&apos;s</h1>
               <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] mr-2 pl-[4px]">
-                <Image src="/frame2.png" width={30} height={30} alt="Logo" />
+                <Image src="/Frame2.png" width={30} height={30} alt="Logo" />
               </button>
               <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] pl-[5px] mr-2">
-                <Image src="/frame.png" width={30} height={30} alt="Logo" />
+                <Image src="/Frame.png" width={30} height={30} alt="Logo" />
               </button>
             </div>
 
@@ -212,10 +212,10 @@ function Home() {
             <div className='class="w-[211px] h-[48px] top-[2px] left-[407px] p-[0px] pl-[7px] gap-0 opacity-0" flex justify-end mr-5'>
               <h1 className="mr-[10px]">Shop Women&apos;s</h1>
               <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] mr-2 pl-[5px] pr-[8px]">
-                <Image src="/frame2.png" width={30} height={30} alt="Logo" />
+                <Image src="/Frame2.png" width={30} height={30} alt="Logo" />
               </button>
               <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] pl-[4px] mr-2">
-                <Image src="/frame.png" width={30} height={30} alt="Logo" />
+                <Image src="/Frame.png" width={30} height={30} alt="roundLogo" />
               </button>
             </div>
 
@@ -227,7 +227,7 @@ function Home() {
                     src="/Imagewomen1.png"
                     width={300}
                     height={300}
-                    alt="Logo"
+                    alt="womenImage"
                   />
                 </div>
                 <div className="flex justify-between mr-2">
@@ -271,7 +271,7 @@ function Home() {
         <h1 className="text-[22px] mt-[13px] font-semibold font-sans leading-7">
           Don&apos;t Miss
         </h1>
-        <Image src="/imagedontmiss.png" width={1344} height={700} alt="Logo" />
+        <Image src="/Imagedontmiss.png" width={1344} height={700} alt="Logo" />
         <h1 className="text-center w-[574] h-[60]  mt-[28PX] text-[58px] font-semibold">
           
           FLIGHT ESSENTIALS

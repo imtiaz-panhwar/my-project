@@ -18,7 +18,7 @@ const JoinUs = () => {
       >
         {/* Nike Shoe Logo */}
         <div className="flex justify-center mb-6">
-          <Image src="/vector1.png" width={60} height={60} alt="Nike Shoe Logo" />
+          <Image src="/Vector1.png" width={60} height={60} alt="Nike Shoe Logo" />
         </div>
 
         {/* Heading */}

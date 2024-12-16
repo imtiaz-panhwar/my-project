@@ -28,7 +28,7 @@ function Navbar() {
       <div className="max-w-[1440px] mx-auto h-[58px] bg-[#FFFFFF] flex items-center justify-between px-4 sm:px-6 lg:px-10">
         {/* Left Section: Logo or Brand */}
         <div className="ml-[9.81px]">
-          <Image src="/vector1.png" width={58.85} height={22.54} alt="Logo" />
+          <Image src="/Vector1.png" width={58.85} height={22.54} alt="Logo" />
         </div>
 
         {/* Middle Section: Navigation Links */}
