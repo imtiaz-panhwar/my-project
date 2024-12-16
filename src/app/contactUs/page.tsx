@@ -50,9 +50,9 @@ const ContactUs = () => {
 
 <p className=' text-[15px] font-Helvetica Neue leading-7 font-medium'>We want to make buying your favourite Nike shoes and gear online fast and easy, and we accept the following payment options:</p>
 <p className=' text-[16px] ml-[16px] font-Helvetica Neue leading-7 font-normal'>Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro</p>
-<p className=' text-[15px] ml-[16px] font-Helvetica Neue leading-7 font-normal'>If you enter your PAN information at checkout, you'll be able to pay for your order with PayTM or a local credit or debit card.</p>
+<p className=' text-[15px] ml-[16px] font-Helvetica Neue leading-7 font-normal'>If you enter your PAN information at checkout, you&apos;ll be able to pay for your order with PayTM or a local credit or debit card.</p>
 <p className=' text-[15px] ml-[16px] font-Helvetica Neue leading-7 font-normal'>Apply Pay</p>
-<p className=' text-[16px]  font-Helvetica Neue leading-7 font-medium'><span className='underline text-black'>Nike Members</span> can store multiple debit or credit cards in their profile for faster checkout. If you're not already a Member,  <span className='underline text-black'>joinus</span> today.</p>
+<p className=' text-[16px]  font-Helvetica Neue leading-7 font-medium'><span className='underline text-black'>Nike Members</span> can store multiple debit or credit cards in their profile for faster checkout. If you&apos;re not already a Member,  <span className='underline text-black'>joinus</span> today.</p>
 
 <div className=' w-[260px] mt-[7.5px]  h-[70px] flex justify-between'>
   
@@ -64,11 +64,11 @@ const ContactUs = () => {
 <p className='font-Helvetica Neue font text-[16px] font-normal leading-7'>Yes, we recommend asking your bank to enable international purchases on your card. You will be notified at checkout if international purchases need to be enabled.</p>
 <p className='font-Helvetica Neue font text-[16px] font-normal mt-2 leading-7'>Please note, some banks may charge a small transaction fee for international orders.</p>
 <p className='font-Helvetica Neue font text-[16px] font-semibold mt-2 leading-7'> Can I pay for my order with multiple methods?</p>
-<p className='font-Helvetica Neue font text-[16px] font-normal leading-7'>No, payment for Nike orders can't be split between multiple payment methods.</p>
+<p className='font-Helvetica Neue font text-[16px] font-normal leading-7'>No, payment for Nike orders can&apos;t be split between multiple payment methods.</p>
 <p className='font-Helvetica Neue font text-[16px] font-semibold pt-2 leading-7'>What payment method is accepted for SNKRS orders?</p>
 <p className='font-Helvetica Neue font text-[16px] font-normal leading-7'>You can use any accepted credit card to pay for your SNKRS order.</p>
-<p className='font-Helvetica Neue font text-[18px] font-semibold pt-2 leading-7'>Why don't I see Apple Pay as an option?</p>
-<p className='font-Helvetica Neue font text-[15.4px] font-normal leading-7'>To see Apple Pay as an option in the Nike App or on Nike.com, you'll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you'll need to use Safari to use Apple Pay on Nike.com.</p>
+<p className='font-Helvetica Neue font text-[18px] font-semibold pt-2 leading-7'>Why don&apos;t I see Apple Pay as an option?</p>
+<p className='font-Helvetica Neue font text-[15.4px] font-normal leading-7'>To see Apple Pay as an option in the Nike App or on Nike.com, you&apos;ll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you&apos;ll need to use Safari to use Apple Pay on Nike.com.</p>
 <p className='font-Helvetica Neue font text-[16px] font-normal pt-3 leading-7'>Was this answer helpful?</p>
 
 
@@ -88,7 +88,7 @@ const ContactUs = () => {
           </div>
 
 <p className='font-Helvetica Neue font text-[20px] font-semibold text-gray-400 leading-8'>RELATED</p>
-<p className='font-Helvetica Neue font text-[16px] underline text-black font-bold pt-1 ml-[36px] leading-7'>WHAT ARE NIKE'S DELIVERY OPTIONS?</p>
+<p className='font-Helvetica Neue font text-[16px] underline text-black font-bold pt-1 ml-[36px] leading-7'>WHAT ARE NIKE&apos;S DELIVERY OPTIONS?</p>
 <p className='font-Helvetica Neue font text-[16px] underline text-black font-bold pt-1 ml-[36px] leading-7'>HOW DO I GET FREE DELIVERY ON NIKE ORDERS?</p>
         </div>
 
@@ -135,7 +135,7 @@ const ContactUs = () => {
                       alt="OKimg"
                       />
               </div>
-                    <p className='text-center text-[15px] mt-3 leading-5 font-medium font-Helvetica Neue'>We'll reply within</p>
+                    <p className='text-center text-[15px] mt-3 leading-5 font-medium font-Helvetica Neue'>We&apos;ll reply within</p>
                     <p className='text-center text-[15px] leading-5 font-medium font-Helvetica Neue'>five business days</p>
                   </div>
 

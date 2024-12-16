@@ -17,7 +17,7 @@ const checkOut = () => {
               How would you like to get your order?
             </h1>
             <p className="font-Inter font-normal text-[15px] mt-2 leading-6">
-              Customs regulation for India require a copy of the recipient's
+              Customs regulation for India require a copy of the recipient&apos;s
               KYC. The address on the KYC needs to match the shipping address.
               Our courier will contact you via SMS/email to obtain a copy of
               your KYC. The KYC will be stored securely and used solely for the
@@ -27,9 +27,9 @@ const checkOut = () => {
               Learn More
             </p>
             <div className="w-[440px] h-[82px] border-2 border-black rounded-md mt-4">
-              {" "}
+              
               <div className="p-5 flex gap-4">
-                <Image src="/box.png" width={24} height={24} alt="Box-image" />{" "}
+                <Image src="/box.png" width={24} height={24} alt="Box-image" />
                 Deliver It
               </div>
             </div>
@@ -189,7 +189,7 @@ const checkOut = () => {
               </div>
 
               <h2 className="text-left text-[21px] font-bold leading-6 font-Inter pt-3  text-black">
-                What's your contact information?
+                What&apos;s your contact information?
               </h2>
 
               <div className="mb-1 pt-4 ">
@@ -219,7 +219,7 @@ const checkOut = () => {
               </div>
 
               <h2 className="text-left text-[21px] font-bold leading-6 font-Inter pt-4  text-black">
-                What's your PAN?
+                What&apos;s your PAN?
               </h2>
 
               <div className="mb-1 pt-4">
@@ -284,20 +284,20 @@ const checkOut = () => {
         <div className="w-[320px] h-[721px]ml-8 font-Inter text-[21px] leading-6 font-bold">
           <h1>OLDER SUMMARY</h1>
           <div className="w-[320px] h-[135px]">
-            <p className="  text-[15px] leading-7 font-Inter font-normal">
-              <pre>SubTotal                  ₹ 20 890.00</pre>
-            </p>
+            
+              <pre className="  text-[15px] leading-7 font-Inter font-normal">SubTotal                  ₹ 20 890.00</pre>
+            
 
             <div className="w-[334.62px] h-[50px]  border-b-2 border-gray-200 ">
-              <p className="text-[15px] leading-7 font-Inter font-normal">
-                <pre>Delivery/Shipping               Free</pre>
-              </p>
+              
+                <pre className="text-[15px] leading-7 font-Inter font-normal">Delivery/Shipping               Free</pre>
+              
           </div>
 
             <div className="w-[334.62px] h-[62px]  border-b-2 border-gray-200 ">
-              <p className="  text-[15px] leading-7 font-Inter font-extrabold ">
-                <pre>Total                     ₹ 20 890.00</pre>
-              </p>
+              
+                <pre className="  text-[15px] leading-7 font-Inter font-extrabold ">Total                     ₹ 20 890.00</pre>
+              
             </div>
           </div>
           <p className="  text-[9px] mt-2 leading-6 font-Inter font-normal">
@@ -319,7 +319,7 @@ const checkOut = () => {
                   />
                 </div>
                 <div className="w-[85] h-[120px] text-[13px] leading-6 font-Inter font-normal ml-2 ">
-                  <h1>Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top</h1>
+                  <h1>Nike Dri-FIT ADV TechKnit Ultra Men&apos;s Short-Sleeve Running Top</h1>
                 </div>
               </div>
             </div>
@@ -336,7 +336,7 @@ const checkOut = () => {
                   />
                 </div>
                 <div className="w-[85] h-[120px] text-[13px] leading-6 font-Inter font-normal mr-4 ">
-                  <h1>Nike Air Max 97 SE Men's Shoes</h1>
+                  <h1>Nike Air Max 97 SE Men&apos;s Shoes</h1>
                 </div>
               </div>
             </div>

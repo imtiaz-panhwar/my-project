@@ -32,9 +32,7 @@ function Home() {
           —designed to push you past your limits and help you go to the max.
         </p>
         <div className="w-[1344] h-[200px] gap-4 mt-8 flex justify-center">
-          <div className="w-[110.58px] h-[39.5px] rounded-full text-center text-[15px] pt-[6.5px] pr-[22.08px] pb-[7.5px] pl-[18px] font-Helvetica Neue leading-6 font-medium bg-black text-white">
-            Notify Me
-          </div>
+          <div className="w-[110.58px] h-[39.5px] rounded-full text-center text-[15px] pt-[6.5px] pr-[22.08px] pb-[7.5px] pl-[18px] font-Helvetica Neue leading-6 font-medium bg-black text-white">Notify Me</div>
           <div className="w-[138.16px] h-[39.5px] rounded-full text-center text-[15px] pt-[6.5px] pr-[22.08px] pb-[7.5px] pl-[18px] font-Helvetica Neue leading-6 font-medium bg-black text-white">
             Shop Air Max
           </div>
@@ -70,7 +68,7 @@ function Home() {
                 <h3 className="text-md font-semibold">Nike Air Pulse</h3>
                 <p className="text-base font-bold text-black">₹13 995</p>
               </div>
-        <p className="text-sm text-gray-500 mt-1 px-4">Women's Shoes</p>
+        <p className="text-sm text-gray-500 mt-1 px-4">Women&apos;s Shoes</p>
             </div>
           </div>
 
@@ -86,7 +84,7 @@ function Home() {
                 <h3 className="text-lg font-semibold">Nike Air Pulse</h3>
                 <p className="text-base font-bold text-black">₹13 995</p>
               </div>
-              <p className="text-sm text-gray-500 mt-1">Men's Shoes.</p>
+              <p className="text-sm text-gray-500 mt-1">Men&apos;s Shoes.</p>
             </div>
           </div>
 
@@ -104,7 +102,7 @@ function Home() {
                 </h3>
                 <p className="text-base font-bold text-black">₹16 995</p>
               </div>
-              <p className="text-sm text-gray-500 mt-1">men's Shoes.</p>
+              <p className="text-sm text-gray-500 mt-1">men&apos;s Shoes.</p>
             </div>
           </div>
 
@@ -134,7 +132,7 @@ function Home() {
         </h1>
         <Image src="/imagefeacher.png" width={1344} height={700} alt="Logo" />
         <h1 className="text-center w-[574] h-[60]  mt-[28PX] text-[58px] font-semibold">
-          {" "}
+          
           STEP INTO WHAT FEELS GOOD
         </h1>
         <p className="text-center w-[511] h-[48] text-[15px]">
@@ -155,7 +153,7 @@ function Home() {
         <div className="w-[1356px] h-[509px] flex gap-2 ml-8  mt-2">
           <div className="w-[666px] h-[509px]">
             <div className='class="w-[211px] h-[48px] top-[2px] left-[407px] p-[0px] pl-[7px] gap-0 opacity-0" flex justify-end items-center mr-5'>
-              <h1 className="mr-[10px]">Shop Men's</h1>
+              <h1 className="mr-[10px]">Shop Men&apos;s</h1>
               <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] mr-2 pl-[4px]">
                 <Image src="/frame2.png" width={30} height={30} alt="Logo" />
               </button>
@@ -172,14 +170,14 @@ function Home() {
                     width={300}
                     height={300}
                     alt="Logo"
-                  />{" "}
+                  />
                 </div>
                 <div className="flex justify-between mr-2">
                   <h3 className="text-[14px] font-semibold leading-4 mt-4">Nike Dri-FIT ADV TechKnit Ultra</h3>
                   <p className="text-base font-semibold mt-2 text-black">₹ 3 895</p>
                 </div>
                 <p className="text-sm text-gray-500 mt-1">
-                  Men's Short-Sleeve
+                  Men&apos;s Short-Sleeve
                 </p>
                   <p className="text-sm text-gray-500">
                   Running Top
@@ -194,14 +192,14 @@ function Home() {
                     width={300}
                     height={300}
                     alt="Logo"
-                  />{" "}
+                  />
                 </div>
                 <div className="flex justify-between mr-2">
                   <h3 className="text-[14px] font-semibold leading-4 mt-4">Nike Dri-FIT Challenger</h3>
                   <p className="text-base font-semibold mt-2 text-black">₹ 2 495</p>
                 </div>
                 <p className="text-sm text-gray-500 mt-1">
-                  Men's Short-Sleeve
+                  Men&apos;s Short-Sleeve
                 </p>
                   <p className="text-sm text-gray-500">
                   Running Top
@@ -212,7 +210,7 @@ function Home() {
 
           <div className="w-[666px] h-[509px]">
             <div className='class="w-[211px] h-[48px] top-[2px] left-[407px] p-[0px] pl-[7px] gap-0 opacity-0" flex justify-end mr-5'>
-              <h1 className="mr-[10px]">Shop Women's</h1>
+              <h1 className="mr-[10px]">Shop Women&apos;s</h1>
               <button className="w-[40px] h-[40px] bg-gray-200 rounded-full text-black text-[20px] mr-2 pl-[5px] pr-[8px]">
                 <Image src="/frame2.png" width={30} height={30} alt="Logo" />
               </button>
@@ -224,20 +222,20 @@ function Home() {
             <div className="w-[666px] h-[477px]  grid grid-cols-2 gap-12">
               <div className="w-[300px] h-[393px] ml-[48px]">
                 <div className="w-[300px]h-[300px]">
-                  {" "}
+                
                   <Image
                     src="/Imagewomen1.png"
                     width={300}
                     height={300}
                     alt="Logo"
-                  />{" "}
+                  />
                 </div>
                 <div className="flex justify-between mr-2">
                   <h3 className="text-[14px] font-semibold leading-4 mt-4">Nike Dri-FIT ADV Run Division</h3>
                   <p className="text-base font-semibold mt-2 text-black">₹ 5 895</p>
                 </div>
                 <p className="text-sm text-gray-500 mt-1">
-                Women's Long-Sleeve 
+                Women&apos;s Long-Sleeve 
                 </p>
                   <p className="text-sm text-gray-500">
                   Running Top
@@ -258,7 +256,7 @@ function Home() {
                   <p className="text-base font-semibold mt-2 text-black">₹ 3 795</p>
                 </div>
                 <p className="text-sm text-gray-500 mt-1">
-                Women's Mid-Rise 7/8 Running  
+                Women&apos;s Mid-Rise 7/8 Running  
                 </p>
                   <p className="text-sm text-gray-500">
                   Leggings with Pockets
@@ -271,11 +269,11 @@ function Home() {
 
       <div className="w-[1344px] h-[977px] mt-8 mx-auto justify-center">
         <h1 className="text-[22px] mt-[13px] font-semibold font-sans leading-7">
-          Don't Miss
+          Don&apos;t Miss
         </h1>
         <Image src="/imagedontmiss.png" width={1344} height={700} alt="Logo" />
         <h1 className="text-center w-[574] h-[60]  mt-[28PX] text-[58px] font-semibold">
-          {" "}
+          
           FLIGHT ESSENTIALS
         </h1>
         <p className="text-center w-[511] h-[48] text-[15px]">
@@ -304,7 +302,7 @@ function Home() {
         <div className="w-[200px] h-[190px] text-[12px] text-gray-500 font-sans leading-5 "><h2 className="font-bold text-black">icons</h2><br /><p>Air Force 1</p><p>Huarache</p><p>Air Max 90</p><p>Air Max 95</p> </div>
         <div className="w-[200px] h-[190px] text-[12px] text-gray-500 font-sans leading-5 "> <h2 className="font-bold text-black">Shoes</h2><br /><p>All Shoes</p><p>Custom Shoes</p><p>Jordan Shoes</p><p>Running Shoes</p></div>
         <div className="w-[200px] h-[190px] text-[12px] text-gray-500 font-sans leading-5 "><h2 className="font-bold text-black">Clothing2</h2><br /><p>All Clothings</p><p>Modern Shoes</p><p>Hoodies & Pullovers</p><p>Shirts and Tops</p> </div>
-        <div className="w-[200px] h-[190px] text-[12px] text-gray-500 font-sans leading-5 "><h2 className="font-bold text-black">Kids</h2><br /><p>Infant and todler Shoes</p><p>Kid's Shoes</p><p>Kids Jordan Shoes</p><p>Kids' Basket Ball Shoes</p> </div>
+        <div className="w-[200px] h-[190px] text-[12px] text-gray-500 font-sans leading-5 "><h2 className="font-bold text-black">Kids</h2><br /><p>Infant and todler Shoes</p><p>Kid&apos;s Shoes</p><p>Kids Jordan Shoes</p><p>Kids&apos; Basket Ball Shoes</p> </div>
       </div>
       <Footer />
     </div>

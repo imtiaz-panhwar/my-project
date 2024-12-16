@@ -127,7 +127,7 @@ const JoinUs = () => {
 
         {/* Terms and Conditions */}
 <div className="text-center text-[12px] text-gray-600 mb-6 ml-4 mr-4">
-          By creating an account, you agree to Nike's <span className='underline text-gray-500'>privacy policy </span> and <span className='underline text-gray-500'>terms of use</span>
+          By creating an account, you agree to Nike&apos;s <span className='underline text-gray-500'>privacy policy </span> and <span className='underline text-gray-500'>terms of use</span>
           
         </div>
 

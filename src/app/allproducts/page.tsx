@@ -33,6 +33,7 @@ function AllProducts() {
         <div className="flex">
           {/* Sidebar */}
           <aside className="w-[260px] h-auto bg-white p-4 ">
+
             {/* Categories Section */}
             <div className="mb-6">
               
@@ -121,15 +122,12 @@ function AllProducts() {
   
             {/* Product Card 1 */}
             <div className="bg-white p-4 w-[348px] h-[533px]">
-  <img
-    src="/products/product1.png"
-    alt="Product 1"
-    className="w-full h-[348px] object-cover mb-4"
-  />
-  <div>
+
+            <Image src="/products/product1.png" width={348} height={30} alt="Filter Icon" />
+    <div>
     <p className="text-sm text-[#9E3500] mb-1">Just In</p>
-    <h3 className="text-md font-medium mb-2">Nike Air Force 1 Mid '07</h3>
-    <p className="text-[15px] text-gray-500 mb-2">Men's Shoes</p>
+    <h3 className="text-md font-medium mb-2">Nike Air Force 1 Mid &apos;07</h3>
+    <p className="text-[15px] text-gray-500 mb-2">Men&apos;s Shoes</p>
     <p>1 Color</p>
     <p className="text-xl font-semibold text-gray-800">MRP : ₹ 10 795.00</p>
   </div>
@@ -138,16 +136,12 @@ function AllProducts() {
 
             {/* Product Card 2 */}
   <div className="bg-white p-4  w-[348px] h-[533px]">
-              <img
-                src="/products/product2.png"
-                alt="Product 2"
-      className="w-full h-[348px] object-cover  mb-4"
-              />
+  <Image src="/products/product2.png" width={348} height={30} alt="Filter Icon" />
               <div>
                 <p className="text-sm text-[#9E3500] mb-1">Just In</p>
                 <h3 className="text-sm font-medium mb-2">Nike Court Vision Low Next Nature</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-        Men's Shoes
+        Men&apos;s Shoes
       </p>
                 <p>1 Color</p>
                 <p className="text-xl font-semibold text-gray-800">MRP : ₹ 4 995.00</p>
@@ -156,16 +150,12 @@ function AllProducts() {
 
             {/* Product Card 3 */}
   <div className="bg-white p-4  w-[348px] h-[533px]">
-              <img
-                src="/products/product3.png"
-                alt="Product 3"
-      className="w-full h-[348px] object-cover  mb-4"
-              />
+  <Image src="/products/product3.png" width={348} height={30} alt="Filter Icon" />
               <div>
                 <p className="text-sm text-[#9E3500] mb-1">Just In</p>
                 <h3 className="text-md font-medium mb-2">Nike Air Force 1 PLT.AF.ORM</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-        Women's Shoes
+        Women&apos;s Shoes
       </p>
                 <p>1 Color</p>
                 <p className="text-xl font-semibold text-gray-800">MRP : ₹ 8 695.00</p>
@@ -174,16 +164,12 @@ function AllProducts() {
 
               {/* Product Card 4 */}
             <div className="bg-white p-4  w-[348px] h-[533px]">
-             <img
-              src="/products/product4.png"
-      alt="Product 4"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+            <Image src="/products/product4.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Air Force 1 React</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Shoes
+      Men&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 13 295.00</p>
@@ -192,16 +178,12 @@ function AllProducts() {
 
 {/* Product Card 5 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product5.png"
-      alt="Product 5"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product5.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Promo Exclusion</p>
       <h3 className="text-md font-medium mb-2">Air Jordan 1 Elevate Low</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-        Women's Shoes
+        Women&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 11 895.00</p>
@@ -210,16 +192,12 @@ function AllProducts() {
 
 {/* Product Card 6 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product6.png"
-      alt="Product 6"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product6.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Standard Issue</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Basketball Jersey
+      Women&apos;s Basketball Jersey
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 2 895.00</p>
@@ -228,16 +206,12 @@ function AllProducts() {
 
 {/* Product Card 7 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product7.png"
-      alt="Product 7"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product7.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Promo Exclusion</p>
       <h3 className="text-md font-medium mb-2">Nike Dunk Low Retro SE</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Shoes
+      Men&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 9 695.00</p>
@@ -246,16 +220,12 @@ function AllProducts() {
 
 {/* Product Card 8 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product8.png"
-      alt="Product 8"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product8.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Sustainable Materials</p>
       <h3 className="text-md font-medium mb-2">Nike Dri-FIT UV Hyverse</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Short-Sleeve Graphic Fitness Top
+      Men&apos;s Short-Sleeve Graphic Fitness Top
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 2 495.00</p>
@@ -264,16 +234,12 @@ function AllProducts() {
 
 {/* Product Card 9 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product9.png"
-      alt="Product 9"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product9.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Court Vision Low</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Shoes
+      Men&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 5 695.00</p>
@@ -282,16 +248,12 @@ function AllProducts() {
 
 {/* Product Card 10 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product10.png"
-      alt="Product 10"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product10.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
-      <h3 className="text-md font-medium mb-2">Nike Dri-FIT Ready</h3>
+      <h3 className="text-md font-medium mb-2"> Nike Dri-FIT Ready </h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Short-Sleeve Fitness Top
+      Men&apos;s Short-Sleeve Fitness Top
       </p>
       <p>3 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 2 495.00</p>
@@ -300,16 +262,12 @@ function AllProducts() {
 
 {/* Product Card 11 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product11.png"
-      alt="Product 11"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product11.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike One Leak Protection: Period</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Mid-Rise 18cm (approx.) Biker Shorts
+      Women&apos;s Mid-Rise 18cm (approx.) Biker Shorts
       </p>
       <p>2 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 3 395.00</p>
@@ -318,16 +276,12 @@ function AllProducts() {
 
 {/* Product Card 12 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product12.png"
-      alt="Product 12"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product12.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Air Force 1 LV8 3</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Older Kids' Shoe
+      Older Kids&apos; Shoe
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 7 495.00</p>
@@ -336,16 +290,12 @@ function AllProducts() {
 
 {/* Product Card 13 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product13.png"
-      alt="Product 13"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product13.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Blazer Low Platform</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Shoes
+      Women&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 8 195.00</p>
@@ -354,16 +304,12 @@ function AllProducts() {
 
 {/* Product Card 14 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-     src="/products/product14.png"
-      alt="Product 14"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product14.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
-      <h3 className="text-md font-medium mb-2">Nike Air Force 1 '07</h3>
+      <h3 className="text-md font-medium mb-2">Nike Air Force 1 &apos;07</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Shoe
+      Women&apos;s Shoe
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 8 195.00</p>
@@ -372,16 +318,12 @@ function AllProducts() {
 
 {/* Product Card 15 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product15.png"
-      alt="Product 15"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product15.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Pro Dri-FIT</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Tight-Fit Sleeveless Top
+      Men&apos;s Tight-Fit Sleeveless Top
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 1 495.00</p>
@@ -390,16 +332,12 @@ function AllProducts() {
 
 {/* Product Card 16 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product16.png"
-      alt="Product 16"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product16.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Dunk Low Retro</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Shoes
+      Men&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 8 695.00</p>
@@ -408,16 +346,12 @@ function AllProducts() {
 
 {/* Product Card 17 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product17.png"
-      alt="Product 17"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product17.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Air Max SC</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Shoes
+      Women&apos;s Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 5 995.00</p>
@@ -426,16 +360,12 @@ function AllProducts() {
 
 {/* Product Card 18 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product18.png"
-      alt="Product 18"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product18.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Dri-FIT UV Miler</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Short-Sleeve Running Top
+      Men&apos;s Short-Sleeve Running Top
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 1 695.00</p>
@@ -444,16 +374,12 @@ function AllProducts() {
 
   {/* Product Card 19 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product19.png"
-      alt="Product 19"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product19.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Air Max SYSTM</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Older Kids' Shoes
+      Older Kids&apos; Shoes
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 6 495.00</p>
@@ -462,16 +388,12 @@ function AllProducts() {
 
   {/* Product Card 20 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product20.png"
-      alt="Product 20"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product20.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Alate All U</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Light-Support Lightly Lined U-Neck Printed Sports Bra
+      Women&apos;s Light-Support Lightly Lined U-Neck Printed Sports Bra
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 2 195.00</p>
@@ -480,16 +402,12 @@ function AllProducts() {
 
   {/* Product Card 21 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product21.png"
-      alt="Product 21"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product21.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Court Legacy Lift</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Shoes
+      Women&apos;s Shoes
       </p>
       <p>2 Colours</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 7 495.00</p>
@@ -498,16 +416,12 @@ function AllProducts() {
 
   {/* Product Card 22 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product22.png"
-      alt="Product 22"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product22.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Swoosh</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Medium-support Padded Sports Bra Tank
+      Women&apos;s Medium-support Padded Sports Bra Tank
       </p>
       <p>2 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 3 095.00</p>
@@ -516,11 +430,7 @@ function AllProducts() {
 
   {/* Product Card 23 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product23.png"
-      alt="Product 23"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product23.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike SB Zoom Janoski OG+</h3>
@@ -534,11 +444,7 @@ function AllProducts() {
 
   {/* Product Card 24 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product24.png"
-      alt="Product 24"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product24.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Dri-FIT Run Division Rise 365</h3>
@@ -552,16 +458,12 @@ function AllProducts() {
 
   {/* Product Card 25 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product25.png"
-      alt="Product 25"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product25.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Dri-FIT Challenger</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's 18cm (approx.) 2-in-1 Versatile Shorts
+      Men&apos;s 18cm (approx.) 2-in-1 Versatile Shorts
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 2 495.00</p>
@@ -570,16 +472,12 @@ function AllProducts() {
 
   {/* Product Card 26 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product26.png"
-      alt="Product 26"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product26.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Jordan Series ES</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Men's Shoes
+      Men&apos;s Shoes
       </p>
       <p>2 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 7 495.00</p>
@@ -588,16 +486,12 @@ function AllProducts() {
 
   {/* Product Card 27 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product27.png"
-      alt="Product 27"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product27.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Outdoor Play</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Older Kids' Oversized Woven Jacket
+      Older Kids&apos; Oversized Woven Jacket
       </p>
       <p>1 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 3 895.00</p>
@@ -606,16 +500,12 @@ function AllProducts() {
 
   {/* Product Card 28 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-    <img
-      src="/products/product28.png"
-      alt="Product 28"
-      className="w-full h-[348px] object-cover  mb-4"
-    />
+<Image src="/products/product28.png" width={348} height={30} alt="Filter Icon" />
     <div>
       <p className="text-sm text-[#9E3500] mb-1">Just In</p>
       <h3 className="text-md font-medium mb-2">Nike Sportswear Trend</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Older Kids' (Girls') High-waisted Woven Shorts
+      Older Kids&apos; Girls&apos; High-waisted Woven Shorts
       </p>
       <p>2 Color</p>
       <p className="text-xl font-semibold text-gray-800">MRP : ₹ 2 495.00</p>
@@ -624,16 +514,12 @@ function AllProducts() {
 
 {/* Product Card 29 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-  <img
-    src="/products/product29.png"
-    alt="Product 29"
-      className="w-full h-[348px] object-cover  mb-4"
-  />
+<Image src="/products/product29.png" width={348} height={30} alt="Filter Icon" />
   <div>
     <p className="text-sm text-[#9E3500] mb-1">Just In</p>
-    <h3 className="text-md font-medium mb-2">Nike Blazer Low '77 Jumbo</h3>
+    <h3 className="text-md font-medium mb-2">Nike Blazer Low &apos;77 Jumbo</h3>
       <p className="text-[15px] text-gray-500 mb-2">
-      Women's Shoes
+      Women&apos;s Shoes
       </p>
     <p>1 Color</p>
     <p className="text-xl font-semibold text-gray-800">MRP : ₹ 8 595.00</p>
@@ -642,11 +528,7 @@ function AllProducts() {
 
 {/* Product Card 30 */}
 <div className="bg-white p-4  w-[348px] h-[533px]">
-  <img
-    src="/products/product30.png"
-    alt="Product 30"
-      className="w-full h-[348px] object-cover  mb-4"
-  />
+<Image src="/products/product30.png" width={348} height={30} alt="Filter Icon" />
   <div>
     <p className="text-sm text-[#9E3500] mb-1">Just In</p>
     <h3 className="text-md font-medium mb-2">Nike SB Force 58</h3>
@@ -660,24 +542,24 @@ function AllProducts() {
     </div>
   </div>
 </div>
-      <div className='w-[1085px] h-[259px] ml-[350px] mt-24 mx-auto border-t-2 border-gray-200'>
-        <h1 className='mt-[40px] font-semibold font-sans text-[21px] leading-7'>Related Categories</h1>
+      <div className="w-[1085px] h-[259px] ml-[350px] mt-24 mx-auto border-t-2 border-gray-200">
+        <h1 className="mt-[40px] font-semibold font-sans text-[21px] leading-7">Related Categories</h1>
 
-        <div className='w-[1092px] h-[174px]'>
-          <div className=' flex justify-start gap-2'>
-          <div className='w-[160.83px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>Best Selling Products</div>
-          <div className='w-[104.36px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>Best Shoes</div>
-          <div className='w-[165.31px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>New Basket Ball Shoes</div>
-          <div className='w-[151.56px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>New Football Shoes</div>
-          <div className='w-[139.83px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>New Men's Shoes</div>
-          <div className='w-[153.8px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>New Running Shoes</div>
-          <div className='w-[140.92px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>Best Men's Shoes</div>
+        <div className="w-[1092px] h-[174px]">
+          <div className=" flex justify-start gap-2">
+          <div className="w-[160.83px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">Best Selling Products</div>
+          <div className="w-[104.36px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">Best Shoes</div>
+          <div className="w-[165.31px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">New Basket Ball Shoes</div>
+          <div className="w-[151.56px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">New Football Shoes</div>
+          <div className="w-[139.83px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">New Men&apos;s Shoes</div>
+          <div className="w-[153.8px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">New Running Shoes</div>
+          <div className="w-[140.92px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">Best Men&apos;s Shoes</div>
         </div>
 
-        <div className=' flex justify-start gap-2'>
-          <div className='w-[145.64px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>New Jordan Shoes</div>
-          <div className='w-[159.11px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>Best Women's Shoes</div>
-          <div className='w-[155.47px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4'>Best Training & Gym</div>
+        <div className="flex justify-start gap-2">
+          <div className="w-[145.64px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">New Jordan Shoes</div>
+          <div className="w-[159.11px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">Best Women&apos;s Shoes</div>
+          <div className="w-[155.47px] h-[34px] border-2 border-gray-300 rounded-full  text-center p-1 text-[12px] font-Inter font-normal mt-4">Best Training & Gym</div>
 </div>
 
       </div>
