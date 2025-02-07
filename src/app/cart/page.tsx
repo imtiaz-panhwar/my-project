@@ -1,150 +1,176 @@
-// pages/login.tsx
-import Image from 'next/image';
-import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/footer';
+"use client";
 
-const Cart = () => {
+import { IProduct } from "../../../type/product";
+import React, { useEffect, useState } from "react";
+import {
+  getCartItems,
+  removeFromCart,
+  updateCartQuantity,
+} from "../actions/actions";
+import Image from "next/image";
+import { urlFor } from "@/sanity/lib/image";
+import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
+import client from "@/sanity/lib/client";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer";
+
+const CartPage = () => {
+  const [cartItems, setCartItems] = useState<IProduct[]>([]);
+  const router = useRouter(); // Initialize router
+
+  useEffect(() => {
+    setCartItems(getCartItems());
+  }, []);
+
+  const handleRemove = (id: string) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to undo this action!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Yes, remove it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        removeFromCart(id);
+        setCartItems(getCartItems());
+        Swal.fire(
+          "Removed!",
+          "Item has been removed from your cart.",
+          "success"
+        );
+      }
+    });
+  };
+
+  const handleQuantityChange = (id: string, quantity: number) => {
+    updateCartQuantity(id, quantity);
+    setCartItems(getCartItems());
+  };
+
+  const handleIncrement = (id: string) => {
+    const product = cartItems.find((item) => item._id === id);
+    if (product) {
+      handleQuantityChange(id, product.inventory + 1);
+    }
+  };
+
+  const handleDecrement = (id: string) => {
+    const product = cartItems.find((item) => item._id === id);
+    if (product && product.inventory > 1) {
+      handleQuantityChange(id, product.inventory - 1);
+    }
+  };
+
+  const calculateTotal = () => {
+    return cartItems.reduce(
+      (total, item) => total + item.price * item.inventory,
+      0
+    );
+  };
+
+  const handleProceed = () => {
+    Swal.fire({
+      title: "Processing your order...",
+      text: "Please wait a moment.",
+      icon: "info",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Proceed",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        router.push("/checkOut"); // Navigate to the checkout page
+      }
+    });
+  };
+
   return (
-    <div className="items-center max-w-[1440px] mx-auto h-screen mt-8 bg-white">
-      <Navbar />
+    <>  
+    <Navbar />
+      <div className="w-[800px] mx-auto p-6 bg-gray-100 min-h-screen mt-6">
 
-      <div className="w-[1100px] h-[547.89px] flex mx-auto mt-6">
-        {/* Left side: Cart Items */}
-        <div className="w-[733.33px] h-[547.89px]">
-          <div className="w-[717.38px] bg-gray-100 border-b-2 border-gray-300 h-[62.89px]">
-            <p className="pl-[15px] pt-[10px] text-[13px] leading-3 font-Inter font-medium">Free Delivery</p>
-            <pre className="pl-[15px] pt-[10px] text-[11px] leading-4 font-Inter font-normal">
-              Applies to orders of ₹ 14,000.00 or more.{' '}
-              <span className="underline text-black">view Details</span>
-            </pre>
-            <h1 className="mt-3 text-[22px] font-Inter font-medium leading-8">Bag</h1>
+      <h1 className="text-2xl font-bold mb-6 text-gray-800">Shopping Cart</h1>
 
-            <div className="w-[717.33px] h-[436px]">
-              {/* Cart Item 1 */}
-              <div className="w-[717.33px] h-[218px] flex pt-5 gap-4 border-b-2 border-gray-200">
-                <div className="w-[150px] h-[150px]">
-                  <Image src="/imagecartpage.png" width={150} height={150} alt="shoeimg" />
-                </div>
-                <div className="w-[537.33px] h-[170px]">
-                  <pre className="text-[15px] leading-5 font-medium font-Inter">
-                    Nike Dri-FIT ADV TechKnit Ultra                MRP: ₹ 3,895.00
-                  </pre>
-                  <p className="text-[13px] leading-5 text-gray-700 font-normal font-Inter">Men&apos;s Short-Sleeve Running Top</p>
-                  <p className="text-[13px] leading-5 text-gray-700 font-normal font-Inter">Ashen Slate/Cobalt Bliss</p>
-                  <p className="text-[13px] leading-5 text-gray-700 font-normal font-Inter">Nike Dri-FIT ADV TechKnit Ultra</p>
-                  <pre className="text-[13px] leading-6 text-gray-700 font-normal font-Inter">
-                    Size L Quantity 1
-                  </pre>
+      <div className="space-y-6">
+        {cartItems.length > 0 ? (
+          cartItems.map((item) => (
+            <div
+              key={item._id}
+              className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md"
+            >
+              <div className="flex items-center">
+              {item.image_url && (
+        <Image
+          src={urlFor(item.image_url)} // Convert Sanity image to URL
+          alt={item.productName}
+          width={50} // Set image width
+          height={50} // Set image height
+          className="w-36 h-36 object-contain" // Use Tailwind CSS classes to control size
+          layout="intrinsic" // Use intrinsic layout for better performance and resizing
+         
+        />
+      )}
 
-                  <div className="flex gap-4 leading-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      stroke="currentColor"
-                      className="w-5 h-5 text-black"
-                      viewBox="0 0 28 28"
-                      strokeWidth="2"
+                <div className="ml-4">
+                  <h2 className="text-lg font-semibold">{item.productName}</h2>
+                  <p className="text-gray-500">Price: ${item.price}</p>
+                  <div className="flex items-center mt-2">qty : 
+                    <button
+                      onClick={() => handleDecrement(item._id)}
+                      className="px-2 py-1 bg-gray-300 ml-2 rounded-md hover:bg-gray-400"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                      />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      stroke="currentColor"
-                      className="w-5 h-5 text-black"
-                      viewBox="0 0 28 28"
-                      strokeWidth="2"
+                      -
+                    </button>
+                    <span className="mx-2">{item.inventory}</span>
+                    <button
+                      onClick={() => handleIncrement(item._id)}
+                      className="px-2 py-1 bg-gray-300 rounded-md hover:bg-gray-400"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19 7l-1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 7m5 4v6m4-6v6M9 3h6m-6 0H5m14 0h-4"
-                      />
-                    </svg>
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
-
-              {/* Cart Item 2 */}
-              <div className="w-[717.33px] h-[218px] ml-36 flex pt-5 gap-4 border-b-2 border-gray-200">
-                
-                <div className="w-[537.33px] h-[170px]">
-                  <pre className="text-[15px] leading-5 font-medium font-Inter">
-                    Nike Air Max 97 SE                            MRP: ₹ 16,995.00
-                  </pre>
-                  <p className="text-[13px] leading-5 text-gray-700 font-normal font-Inter">Men&apos;s Shoes</p>
-                  <p className="text-[13px] leading-5 text-gray-700 font-normal font-Inter">Flat Pewter/Light Bone/Black/White</p>
-                  <p className="text-[13px] leading-5 text-gray-700 font-normal font-Inter">Nike Dri-FIT ADV TechKnit Ultra</p>
-                  <pre className="text-[13px] leading-6 text-gray-700 font-normal font-Inter">
-                    Size 8 Quantity 1
-                  </pre>
-
-                  <div className="flex gap-4 leading-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      stroke="currentColor"
-                      className="w-5 h-5 text-black"
-                      viewBox="0 0 28 28"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                      />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      stroke="currentColor"
-                      className="w-5 h-5 text-black"
-                      viewBox="0 0 28 28"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19 7l-1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 7m5 4v6m4-6v6M9 3h6m-6 0H5m14 0h-4"
-                      />
-                    </svg>
-                  </div>
-                </div>
+              <div className="flex items-center">
+                <button
+                  onClick={() => handleRemove(item._id)}
+                  className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
+                >
+                  Remove
+                </button>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Right side: Summary */}
-        <div className="w-[350.67px] h-[295px]">
-          <div>
-            <p className="text-[21px] font-Inter font-medium leading-8">
-              <h1>Summary</h1>
-            </p>
-          </div>
-          <pre className="text-[15px] leading-7 font-Inter font-normal">Sub Total                     ₹ 20,890.00</pre>
-
-          <div className="w-[334.62px] h-[50px] border-b-2 border-gray-200">
-            <pre className="text-[15px] leading-7 font-Inter font-normal">Estimated Delivery & Handling       Free</pre>
-          </div>
-
-          <div className="w-[334.62px] h-[62px] border-b-2 border-gray-200">
-            <pre className="text-[15px] leading-7 font-Inter font-medium">Total                         ₹ 20,890.00</pre>
-          </div>
-          <div className="w-[334.62px] h-[62px] bg-black rounded-full text-white text-[15px] pt-3 font-Inter font-medium leading-6 mt-4 ml-1 text-center">
-            Member Checkout
-          </div>
-        </div>
+          ))
+        ) : (
+          <p className="text-gray-600 text-center">Your cart is empty.</p>
+        )}
       </div>
 
-      <Footer />
+      {cartItems.length > 0 && (
+        <div className="mt-8 bg-white p-4 rounded-lg shadow-md">
+          <div className="flex justify-center items-center space-x-6">
+            <h2 className="text-3xl font-semibold">Total:</h2>
+            <p className="text-3xl font-bold text-gray-800">
+              ${calculateTotal().toFixed(2)}
+            </p>
+          </div>
+          <button
+            onClick={handleProceed}
+            className="mt-4 w-full px-4 py-2 bg-green-500 text-white text-3xl rounded-md hover:bg-green-600"
+          >
+            Proceed Order
+          </button>
+        </div>
+      )}
     </div>
+    <Footer />
+    </>
   );
 };
 
-export default Cart;
+
+
+export default CartPage;

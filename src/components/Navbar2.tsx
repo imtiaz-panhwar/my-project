@@ -5,7 +5,7 @@ import React from "react";
 
 function Navbar2() {
   return (
-    <header className="bg-[#FFFFFF]">
+    <header className="bg-[#FFFFFF] sticky top-0 z-50 shadow-md">
       {/* Bottom Section */}
       <div className="max-w-screen-xl mx-auto h-[58px] bg-[#FFFFFF] flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Left Section: Logo or Brand */}
