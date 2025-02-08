@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
-import { urlFor } from "@/sanity/lib/image";
+import { urlForImage } from "@/sanity/lib/image";
 import client from "@/sanity/lib/client";
 import { IProduct } from "../../type/product";
 import Navbar from "./Navbar";
@@ -60,16 +60,16 @@ const Products: React.FC<ProductsProps> = ({ category }) => {
               className="block bg-white rounded-2xl shadow-md overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-lg"
             >
               <div className="relative">
-                {product.image_url && (
-                  <Image
-                    src={urlFor(product.image_url)}
-                    alt={product.productName}
-                    width={700}
-                    height={700}
-                    layout="responsive"
-                    className="rounded-t-2xl"
-                  />
-                )}
+                {product.image && (
+                              <Image
+                                src={urlForImage(product.image)?.url() || "/fallback-image.jpg"}
+                                alt={product.productName || "Fallback Image"}
+                                fill
+                                sizes="100vw"
+                                style={{ objectFit: "cover" }}
+                                className="product-image"
+                              />
+                            )}
                 <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                   Just In
                 </span>

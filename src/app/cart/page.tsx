@@ -8,7 +8,7 @@ import {
   updateCartQuantity,
 } from "../actions/actions";
 import Image from "next/image";
-import { urlFor } from "@/sanity/lib/image";
+import { urlForImage } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import client from "@/sanity/lib/client";
@@ -102,17 +102,15 @@ const CartPage = () => {
               className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md"
             >
               <div className="flex items-center">
-              {item.image_url && (
-        <Image
-          src={urlFor(item.image_url)} // Convert Sanity image to URL
-          alt={item.productName}
-          width={50} // Set image width
-          height={50} // Set image height
-          className="w-36 h-36 object-contain" // Use Tailwind CSS classes to control size
-          layout="intrinsic" // Use intrinsic layout for better performance and resizing
-         
-        />
-      )}
+              {item.image && (
+                                <Image
+                                  src={item.image.fields.file.url} // Get the URL string!
+                                   alt={item.productName}
+                                    width={700}
+                                     height={700}
+                                     layout="responsive"
+                                  />
+                                  )}
 
                 <div className="ml-4">
                   <h2 className="text-lg font-semibold">{item.productName}</h2>

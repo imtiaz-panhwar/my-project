@@ -1,7 +1,6 @@
-import shipengine, { ShipEngine } from "shipengine"
+import ShipEngine from "shipengine";
 
 
 
-export const shipEngine = new ShipEngine({
-        apiKey:process.env.SHIPENGIN_API_KEY as string
-})
+export const shipEngine = new ShipEngine(process.env.SHIPENGINE_API_KEY || "");
+

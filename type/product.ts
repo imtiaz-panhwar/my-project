@@ -1,6 +1,7 @@
 "use client"
 
 export interface IProduct {
+  image: any;
   _id: string;
   productName: string;
   category: string;

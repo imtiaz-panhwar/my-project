@@ -13,6 +13,6 @@ const client = createClient({
 const builder = imageUrlBuilder(client);
 
 // ✅ Function to generate a usable image URL
-export const urlFor = (source: any) => {
-  return builder.image(source).url();
-};
+export function urlForImage(source: any) {
+  return builder.image(source);
+}
